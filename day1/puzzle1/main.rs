@@ -1,7 +1,7 @@
 use std::fs;
 
 fn main(){
-  let input = fs::read_to_string("numbersFile.input")
+  let input = fs::read_to_string("../numbersFile.input")
         .expect("Something went wrong reading the file");
   let num_array: Vec<i32> = input.split("\n").into_iter().map(|x| x.parse::<i32>().unwrap()).collect();
   println!("{:#?}",num_array);
