@@ -26,7 +26,7 @@ fn get_row(row_binary: &str) -> u32{
     return reccursive_find(row_binary, 0, 127, 'F')
 }
 fn get_col(col_binary: &str) -> u32{
-    return reccursive_find(col_binary, 0, 7, 'R')
+    return reccursive_find(col_binary, 0, 7, 'L')
 }
 
 fn reccursive_find(binary: &str, section_start: u32, section_end: u32, lower_char: char) -> u32 {
